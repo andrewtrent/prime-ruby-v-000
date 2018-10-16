@@ -17,4 +17,4 @@ def prime?(n)
       end
       return true
 end
-puts Benchmark.measure { prime?(11) }
+puts Benchmark.measure { prime?(1111) }
