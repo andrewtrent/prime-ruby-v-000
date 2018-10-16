@@ -16,3 +16,4 @@ def prime?(n)
       end
       return true
 end
+binding.pry
