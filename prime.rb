@@ -1,4 +1,5 @@
 require 'pry'
+require 'benchmark'
 def prime?(n)
       if n <= 1
          return false
@@ -16,4 +17,4 @@ def prime?(n)
       end
       return true
 end
-binding.pry
+Benchmark.measure(prime?(105557))
