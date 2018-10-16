@@ -1,3 +1,4 @@
+require 'pry'
 def prime?(n)
       if n <= 1
          return false
@@ -10,6 +11,7 @@ def prime?(n)
       while i * i <= n
          if n % i == 0 || n % (i + 2) == 0
              return false
+         i = i + 6
         end
       end
       return true
