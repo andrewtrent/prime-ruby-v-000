@@ -15,4 +15,5 @@ def prime?(n)
         end
       end
       return true
+end
 binding.pry
