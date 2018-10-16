@@ -12,9 +12,9 @@ def prime?(n)
       while i * i <= n
          if n % i == 0 || n % (i + 2) == 0
              return false
-         i = i + 6
+         i = i + 1
         end
       end
       return true
 end
-Benchmark.measure(prime?(105557))
+puts Benchmark.measure(prime?(105557))
