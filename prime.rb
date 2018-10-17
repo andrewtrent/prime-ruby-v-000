@@ -8,7 +8,7 @@ def prime?(n)
       elsif n % 2 == 0 || n % 3 == 0
          return false
       else
-        (4..n/4).to_a.all? {|f| n % f != 0}
+        (4..n/5).to_a.all? {|f| n % f != 0}
       end
 
 end
