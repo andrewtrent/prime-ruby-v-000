@@ -7,14 +7,9 @@ def prime?(n)
          return true
       elsif n % 2 == 0 || n % 3 == 0
          return false
+      else
+        (4..n/4).to_a.all? {|f| n % f != 0}
       end
-      i = 5
-      while i * i <= n
-         if n % i == 0
-             return false
-         i = i + 1
-        end
-      end
-      return true
+
 end
 puts Benchmark.measure { prime?(1111) }
